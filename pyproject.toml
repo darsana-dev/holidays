@@ -40,7 +40,10 @@ classifiers = [
 ]
 dynamic = [ "version" ]
 
-dependencies = [ "python-dateutil>=2.9.0.post0,<3" ]
+dependencies = [
+  "pre-commit>=4.5.1",
+  "python-dateutil>=2.9.0.post0,<3",
+]
 
 urls.Changelog = "https://github.com/vacanza/holidays/releases/"
 urls.Documentation = "https://holidays.readthedocs.io/en/latest/"
