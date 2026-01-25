@@ -485,6 +485,7 @@ wheels = [
 name = "holidays"
 source = { editable = "." }
 dependencies = [
+    { name = "pre-commit" },
     { name = "python-dateutil" },
 ]
 
@@ -518,7 +519,10 @@ tests = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "python-dateutil", specifier = ">=2.9.0.post0,<3" }]
+requires-dist = [
+    { name = "pre-commit", specifier = ">=4.5.1" },
+    { name = "python-dateutil", specifier = ">=2.9.0.post0,<3" },
+]
 
 [package.metadata.requires-dev]
 build = [{ name = "polib", specifier = ">=1.2,<2" }]
